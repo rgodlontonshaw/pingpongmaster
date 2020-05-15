@@ -1,0 +1,4 @@
+#Fri May 15 14:12:16 SAST 2020
+base.0=/Users/ryangodlonton-shaw/Documents/Projects/PingPong/ping_pong_master/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

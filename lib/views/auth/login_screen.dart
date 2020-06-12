@@ -71,7 +71,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   SizedBox(
                     height: 20,
                   ),
-                  _skipButton(),
                   _createAccountLabel(),
                   Image.asset(
                     'assets/images/platform45.png',
@@ -150,39 +149,6 @@ class _LoginScreenState extends State<LoginScreen> {
         alignment: Alignment.centerRight,
         child: Text('Forgot Password ?',
             style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500)),
-      ),
-    );
-  }
-
-  Widget _skipButton() {
-    return GestureDetector(
-      onTap: () {
-        _login();
-      },
-      child: Container(
-        child: Text(
-          'Skip Login',
-          style: TextStyle(fontSize: 14, color: Colors.white),
-        ),
-        width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 15),
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(5)),
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                  color: Colors.grey.shade200,
-                  offset: Offset(2, 4),
-                  blurRadius: 5,
-                  spreadRadius: 2)
-            ],
-            gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: [
-                  Commons.gradientBackgroundColorStart,
-                  Commons.gradientBackgroundColorEnd
-                ])),
       ),
     );
   }

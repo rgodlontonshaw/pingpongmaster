@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ping_pong_master/views/auth/login_screen.dart';
+import 'package:ping_pong_master/views/auth/register.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -39,7 +41,12 @@ class HomePageState extends State<HomePage> {
                               color: Colors.white,
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => RegisterPage()));
+                          },
                         )),
                     Container(
                         width: 300,
@@ -52,7 +59,12 @@ class HomePageState extends State<HomePage> {
                               color: Colors.black,
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginScreen()));
+                          },
                         ))
                   ],
                 )),
